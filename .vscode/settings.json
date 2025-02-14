@@ -1,0 +1,10 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "**/LivelyProperties.json"
+      ],
+      "url": "https://raw.githubusercontent.com/rocksdanister/lively/refs/heads/core-separation/schemas/livelyPropertiesSchema.json"
+    }
+  ],
+}

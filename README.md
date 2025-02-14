@@ -53,6 +53,7 @@
 - [Friends of the project](#friends-of-the-project)
 - [Colophon](#colophon)
 - [Other details](#other-details)
+- [Lively Wallpaper Support](#lively-wallpaper-support)
 
 
 ## About
@@ -180,3 +181,9 @@ The glyphs used in the "Palimpsest" and "Twilight" versions are derived from [Te
 The glyphs are formatted as a multi-channel distance field (or MSDF) via Victor Chlumsky's [msdfgen](https://github.com/Chlumsky/msdfgen). This format preserves the crisp edges and corners of vector graphics when rendered as textures. Chlumsky's thesis paper, which is in English and is also easy to read, is [available to download here](https://dspace.cvut.cz/handle/10467/62770).
 
 The raindrops themselves are particles [computed on the GPU and stored in textures](https://threejs.org/examples/webgl_gpgpu_water.html), much smaller than the final render. The data sent from the CPU to the GPU every frame is negligible.
+
+## Lively Wallpaper Support
+
+Support for [Lively Wallpaper](https://github.com/rocksdanister/lively) implemented in `js/lively.js`. Lively wallpaper is a Windows application that implements web-based animated wallpapers and screensavers.
+
+Once the wallpaper is added to Lively, right clicking it in the Lively Library offers a `Customise` action. This opens a window where most of the parameters listed in the [customization section](#customization) are exposed. Currently because the shader passes are not written in a way such that the parameters can affect the wallpaper live, instead some workarounds have been made in the `js/lively.js` script to save the edited parameters, and then just reload the web-view when the `reload` button is clicked at either the top or bottom of the customisation window. If the lively-based properties do not suit your needs, at the bottom of the configuration window under `Advanced Settings` there is a text box where you can enter a manually crafted query like you would append to the URL on the website.

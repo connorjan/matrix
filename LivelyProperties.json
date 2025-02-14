@@ -1,0 +1,261 @@
+{
+
+  "header1": {
+    "type": "label",
+    "value": "Rezmason's Matrix Settings!"
+  },
+
+  "reload": {
+    "type": "button",
+    "text":"Originally implemented by Rezmason\nLively support added by connorjan\nView the README in the lively wallpaper directory\nor on GitHub for more details about the options.\n\nInstructions:\nChange any of the options below to your liking\nClick the \"reload\" button at the top/bottom\nIf you don't click reload your settings will be saved,\nbut the wallpaper will need to be relaunched for the changes to take effect.\nHope you enjoy!\n\n\nClick the \"Reload\" button to reload the wallpaper with the latest settings",
+    "value": "Reload"
+  },
+
+  "versionLabel": {
+    "type": "label",
+    "value": "Version"
+  },
+
+  "version": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Several pre-set \"themes\" of the Matrix to simulate\n(default: classic)",
+    "items": [
+      "classic",
+      "megacity",
+      "neomatrixology",
+      "operator",
+      "nightmare",
+      "paradise",
+      "resurrections",
+      "trinity",
+      "morpheus",
+      "bugs",
+      "palimpsest",
+      "twilight",
+      "3d"
+    ]
+  },
+
+  "mainLabel": {
+    "type": "label",
+    "value": "Main Settings"
+  },
+
+  "numColumns": {
+    "type": "textbox",
+    "text": "Number of columns (default: 80)",
+    "value": "80"
+  },
+
+  "font": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Font (default: matrixcode)",
+    "items": [
+      " ",
+      "matrixcode",
+      "coptic",
+      "gothic",
+      "megacity",
+      "resurrections",
+      "huberfishA",
+      "huberfishD",
+      "gtarg_tenretniolleh",
+      "gtarg_alientext",
+      "neomatrixology"
+    ]
+  },
+
+  "animationSpeed": {
+    "type": "textbox",
+    "text": "Global Animation Speed (default: 1.0)",
+    "value": "1.0"
+  },
+
+  "fps": {
+    "type": "textbox",
+    "text": "Framerate [0-60] (default: 60)",
+    "value": "60"
+  },
+
+  "fallSpeed": {
+    "type": "textbox",
+    "text": "Fall Speed (default: 0.3)",
+    "value": "0.3"
+  },
+
+  "ditherMagnitude": {
+    "type": "textbox",
+    "text": "Dither Magnitude: magnitude of random per-pixel dimming\n(default: 0.05)",
+    "value": "0.05"
+  },
+
+  "backgroundColor": {
+    "type": "color",
+    "text": "Background Color (default: #000000)",
+    "value": "#000000"
+  },
+
+  "slant": {
+    "type": "textbox",
+    "text": "Slant Angle [0 - 359] (default: 0)",
+    "value": "0"
+  },
+
+  "raindropLength": {
+    "type": "textbox",
+    "text": "Raindrop Length: vertical scale of raindrops in the columns\n(default: 0.75)",
+    "value": "0.75"
+  },
+
+  "skipIntro": {
+    "type": "checkbox",
+    "value": true,
+    "text": "Skip Intro (default: true)"
+  },
+
+  "bloomLabel": {
+    "type": "label",
+    "value": "Bloom Settings"
+  },
+
+  "bloomSize": {
+    "type": "textbox",
+    "text": "Bloom Size: glow quality [0 - 1.0] (default: 0.4)",
+    "value": "0.4"
+  },
+
+  "bloomStrength": {
+    "type": "textbox",
+    "text": "Bloom Strength: glow strength [0 - 1.0] (default: 0.7)",
+    "value": "0.7"
+  },
+
+  "cycleSpeed": {
+    "type": "textbox",
+    "text": "Cycle Speed: speed that the glyphs change their symbol (default: 0.03)",
+    "value": "0.03"
+  },
+
+  "cursorLabel": {
+    "type": "label",
+    "value": "Cursor Settings"
+  },
+
+  "cursorColor": {
+    "text": "Cursor Color (default: #BABABA)",
+    "type": "color",
+    "value": "#BABABA"
+  },
+
+  "cursorIntensity": {
+    "type": "textbox",
+    "text": "Cursor Intensity: intensity of the cursor glow (default: 2.0)",
+    "value": "2.0"
+  },
+
+  "glintLabel": {
+    "type": "label",
+    "value": "Glint Settings"
+  },
+
+  "glintColor": {
+    "text": "Glint Color (default: #FFFFFF)",
+    "type": "color",
+    "value": "#FFFFFF"
+  },
+
+  "volumetricLabel": {
+    "type": "label",
+    "value": "Volumetric (3D) Settings"
+  },
+
+  "volumetric": {
+    "type": "checkbox",
+    "value": false,
+    "text": "Volumetric (3D mode) (default: false)"
+  },
+
+  "density": {
+    "type": "textbox",
+    "text": "Density: number of 3D raindrops to create proportional to the default\n(default: 1.0)",
+    "value": "1.0"
+  },
+
+  "forwardSpeed": {
+    "type": "textbox",
+    "text": "Forward Speed: rate that 3D raindrops approach (default: 0.1)",
+    "value": "0.1"
+  },
+
+  "effectLabel": {
+    "type": "label",
+    "value": "Effect / Mode"
+  },
+
+  "effect": {
+    "type": "dropdown",
+    "value": 0,
+    "text": "Which post-processing effect to use.\nNote some effects are incompatible with some options. (default: palette)",
+    "items": [
+      "palette",
+      "plain",
+      "stripes",
+      "mirror",
+      "none"
+    ]
+  },
+
+  "pallete": {
+    "type": "textbox",
+    "text": "Pallete:\nSpecify the colors and placement of the colors\nalong the color grade as alternating R,G,B,% numeric values\n(Only used when effect is set to palette)",
+    "value": ""
+  },
+
+  "stripesLabel": {
+    "type": "label",
+    "value": "Stripe Settings (For when the effect is set to stripes)"
+  },
+
+  "stripe1Enable": { "type": "checkbox", "value": false, "text": "Enable Stripe 1 Color"},
+  "stripe1Color": {"text": "Stripe 1 Color", "type": "color", "value": "#FF0000"},
+
+  "stripe2Enable": { "type": "checkbox", "value": false, "text": "Enable Stripe 2 Color"},
+  "stripe2Color": {"text": "Stripe 2 Color", "type": "color", "value": "#FF8000"},
+
+  "stripe3Enable": { "type": "checkbox", "value": false, "text": "Enable Stripe 3 Color"},
+  "stripe3Color": {"text": "Stripe 3 Color", "type": "color", "value": "#FFFF00"},
+
+  "stripe4Enable": { "type": "checkbox", "value": false, "text": "Enable Stripe 4 Color"},
+  "stripe4Color": {"text": "Stripe 4 Color", "type": "color", "value": "#00FF00"},
+
+  "stripe5Enable": { "type": "checkbox", "value": false, "text": "Enable Stripe 5 Color"},
+  "stripe5Color": {"text": "Stripe 5 Color", "type": "color", "value": "#00FF80"},
+
+  "stripe6Enable": { "type": "checkbox", "value": false, "text": "Enable Stripe 6 Color"},
+  "stripe6Color": {"text": "Stripe 6 Color", "type": "color", "value": "#0000FF"},
+
+  "stripe7Enable": { "type": "checkbox", "value": false, "text": "Enable Stripe 7 Color"},
+  "stripe7Color": {"text": "Stripe 7 Color", "type": "color", "value": "#8000FF"},
+
+  "stripe8Enable": { "type": "checkbox", "value": false, "text": "Enable Stripe 8 Color"},
+  "stripe8Color": {"text": "Stripe 8 Color", "type": "color", "value": "#FF00FF"},
+
+  "advancedLabel": {
+    "type": "label",
+    "value": "Advanced Settings"
+  },
+
+  "advancedArguments": {
+    "type": "textbox",
+    "text": "Any additional query arguments that are appended\nto the final query generated by the settings",
+    "value": ""
+  },
+
+  "reload2": {
+    "type": "button",
+    "text": "Click the \"Reload\" button to reload the wallpaper with the latest settings",
+    "value": "Reload"
+  }
+}
