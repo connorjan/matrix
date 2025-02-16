@@ -145,14 +145,14 @@ function livelyPropertyListener(name, value) {
 		// The stripes are handled specially
 		if (options.effect == "stripes") {
 			let stripeColors = []
-			const numStripeKeys = Object.keys(livelyDefaults)
-				.filter((k) => k.startsWith("stripe") && k.endsWith("Color")).length
+
+			const numStripeKeys = Object.keys(livelyDefaults).filter((k) => k.startsWith("stripe") && k.endsWith("Color")).length
 			for (let i = 1; i <= numStripeKeys; i++) {
-				if (options[`stripe${i}Enable`]) {
+				if (options[`stripe${i}Enable`] == true || options[`stripe${i}Enable`] == "true") {
 					stripeColors.push(options[`stripe${i}Color`])
 				}
 			}
-			if (stripeColors.length && options["effect"] == "stripes") {
+			if (stripeColors.length) {
 				filtered["stripeColors"] = stripeColors.join(",")
 			}
 		}
